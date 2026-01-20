@@ -49,3 +49,67 @@ frugal-ledger/
 │   │   ├── pages/
 │   │   └── api/
 └── ...
+```
+=========================================================
+⚙️ Installation & Setup
+Follow these steps to run the project locally.
+
+1. Prerequisites
+Node.js installed
+
+PostgreSQL installed and running
+
+2. Backend Setup
+Navigate to the root directory:
+
+```Bash
+
+# Install dependencies
+npm install
+
+# Create .env file
+cp .env.example .env
+Configure your .env file:
+
+Cuplikan kode
+
+DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/frugal_ledger_db?schema=public"
+JWT_SECRET="your_super_secret_key"
+PORT=5000
+Run Database Migration:
+```
+```Bash
+
+npx prisma migrate dev --name init
+Start the Server:
+```
+```Bash
+
+npm run dev
+3. Frontend Setup
+Open a new terminal and navigate to the frontend folder:
+```
+```Bash
+
+cd frontend
+```
+# Install dependencies
+```
+npm install
+````
+# Start React app
+````
+npm run dev
+````
+Access the application at http://localhost:5173.
+
+============================================================================
+🔌 API Endpoints
+Method,    Endpoint,              Description
+POST,      /api/auth/register,    Register a new user
+POST,      /api/auth/login,       Login user & get Token
+GET,       /api/categories,       Get all categories
+POST,      /api/categories,       Create a new category
+GET,       /api/transactions,     Get transaction history
+POST,      /api/transactions,     Create transaction (w/ image)
+DELETE,    /api/transactions/:id, Delete a transaction
