@@ -2,7 +2,7 @@
 
 Frugal Ledger is a full-stack personal finance application designed to help users track their income and expenses with intentionality. Inspired by the "frugal living" philosophy, this app allows users to categorize transactions, upload receipt proofs, and visualize their financial health through an intuitive dashboard.
 
-![Dashboard Screenshot](./screenshots/dashboard-preview.png)
+![Dashboard Screenshot](./Dashboard.png)
 *(Note: Place your screenshot here)*
 
 ## 🚀 Features
